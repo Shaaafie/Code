@@ -1,0 +1,311 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Shop</title>
+    <link rel="icon" href="Images/Atelier-no-background.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@700&family=DynaPuff:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="announcement-banner">
+        🎉 Don't miss our Black Friday Sale! Up to 50% off!  
+        <a href="#learn-more" class="banner-link">Learn More</a>
+    </div>
+    <div class="navbar">
+        <div class="navbar-content">
+            <ul class="navbar-left">
+                <li>
+                    <a href="home.html" class="logo-img">
+                        <img src="Images/Atelier logo.png" alt="Atelier Lush logo">
+                    </a>
+                </li>
+                <li><a href="home.html" class="navbar-words">Home</a></li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Shop ▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#shop" class="shop-all">Shop all</a>
+                      <ul>
+                        <li><a href="#tops">Tops</a></li>
+                        <li><a href="bottoms">Bottoms</a></li>
+                        <li><a href="#skirts">Skirts</a></li>
+                        <li><a href="#knit">Knitwear</a></li>
+                        <li><a href="#outer">Outer</a></li>
+                        <li><a href="#bag">Bags</a></li>
+                        <li><a href="#acc">Accessories</a></li>
+                      </ul>
+                    <a href="shop.html" class="option">Bestsellers</a>
+                    <a href="#new" class="option">New</a>
+                    <a href="#men" class="option">Men</a>
+                    <a href="#woman" class="option">Woman</a>
+                    </div>
+                </div>
+                <li><a href="#CustomerService" class="navbar-words">Customer Service</a></li>
+            </ul>
+            <ul class="navbar-right">
+                <li>
+                    <a href="cart.html" class="cart-img">
+                        <img src="Images/Cart icon.png" alt="Cart">
+                    </a>
+                </li>
+                <li>
+                    <a href="#favourites" class="fav-img">
+                        <img src="Images/Heart icon.png" alt="Favourites">
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile" class="profile-img">
+                        <img src="Images/Profile icon.png" alt="Profile">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body class="shop-all">
+    <h1>Bestsellers</h1>
+</body>
+<section class="bestseller-column1">
+    <div class="best-product"> <a href="#SchoolGirl" class="product-link">
+        <img src="Images/beige cardigan outfit.jpg" alt="Beige cardigan">
+        <h3>Beige Cardigan</h3>
+        <p class="price">$30.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#FlowerDress" class="product-link">
+        <img src="Images/Ribbon cardigan.jpg" alt="Ribbon cardigan">
+        <h3>Ribbon Cardigan</h3>
+        <p class="price">$40.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="product.html" class="product-link">
+        <img src="Images/grey sweatshirt.jpg" alt="Grey sweatshirt">
+        <h3>Grey Sweatshirt</h3>
+        <p class="price">$45.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/Beige skirt.jpg" alt="Blue cardigan">
+        <h3>Beige Dress / Cardigan Set</h3>
+        <p class="price">$50.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/Jeans.jpg" alt="Jeans">
+        <h3>Classic Denim Jeans</h3>
+        <p class="price">$40.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+</section>
+<section class="bestseller-column2">
+    <div class="best-product"> <a href="#SchoolGirl" class="product-link">
+        <img src="Images/Baggy jacket.jpg" alt="Baggy Jacket">
+        <h3>Baggy Jacket</h3>
+        <p class="price">$40.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#FlowerDress" class="product-link">
+        <img src="Images/Pink flower dress.jpg" alt="Pink Flower Dress">
+        <h3>Pink Flower Dress</h3>
+        <p class="price">$25.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#CheckeredSkirt" class="product-link">
+        <img src="Images/White flowy skirt.jpg" alt="White Flowy Skirt">
+        <h3>White Flowy Skirt</h3>
+        <p class="price">$30.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/White crop jacket.jpg" alt="White Crop Jacket">
+        <h3>Beige Dress / Cardigan Set</h3>
+        <p class="price">$40.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/Pink button up top.jpg" alt="Pink Button Up shirt">
+        <h3>Pink Button Up Shirt</h3>
+        <p class="price">$25.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+</section>
+<section class="bestseller-column3">
+    <div class="best-product"> <a href="#SchoolGirl" class="product-link">
+        <img src="Images/mary janes outfit.jpg" alt="Mary Janes Shoe">
+        <h3>Black Mary Janes</h3>
+        <p class="price">$80.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#FlowerDress" class="product-link">
+        <img src="Images/White denim jeans.jpg" alt="White Denim Jeans">
+        <h3>White Denim Jeans</h3>
+        <p class="price">$40.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#CheckeredSkirt" class="product-link">
+        <img src="Images/Pink puffy tote.jpg" alt="Pink Puffy Tote Bag">
+        <h3>Pink Puffy Tote</h3>
+        <p class="price">$60.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/Flowy white top.jpg" alt="Flowy White Top">
+        <h3>White Flowy Top</h3>
+        <p class="price">$25.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/Mini leather backpack.jpg" alt="Mini Leather Backpack">
+        <h3>Mini Leather Backpack</h3>
+        <p class="price">$120.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+</section>
+<section class="bestseller-column4">
+    <div class="best-product"> <a href="#SchoolGirl" class="product-link">
+        <img src="Images/Pink crop top.jpg" alt="Pink crop top">
+        <h3>Pink Crop Top</h3>
+        <p class="price">$15.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#FlowerDress" class="product-link">
+        <img src="Images/Pink jacket.jpg" alt="Pink Crop Jacket">
+        <h3>Pink CropJacket</h3>
+        <p class="price">$30.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#CheckeredSkirt" class="product-link">
+        <img src="Images/Pink baggy jacket.jpg" alt="Pink Baggy Jacket">
+        <h3>Pink Baggy Jacket</h3>
+        <p class="price">$50.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/White mini dress.jpg" alt="White Mini Dress">
+        <h3>White Mini Dress</h3>
+        <p class="price">$25.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+    <div class="best-product"> <a href="#BlueCardigan" class="product-link">
+        <img src="Images/White mini skirt.jpg" alt="White mini skirt">
+        <h3>White Mini Skirt</h3>
+        <p class="price">$12.00</p>
+        <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" class="quantity">
+            <br>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </a>
+    </div>
+</section>
+<div class="top-button"> <a href="shop.html">
+    <img src="Images/Arrow button.png" alt="Top" Title="Go to top">
+</a>
+</div>
+
+<div class="pagination">
+    <a href="shop.html" class="active">1</a>
+    <a href="#page2.html">2</a>
+    <a href="#page3.html">3</a>
+    <a href="#page4.html">4</a>
+    <p>...</p>
+    <a href="#page8.html">8</a>
+    <!-- Add more links as needed -->
+</div>
+
+<footer>
+    <ul>
+        <li><p>&copy; 2024 Atelier Lush | <a href="#contact">Contact Us</a></p></li>
+        <li><p>All rights reserved.</p></li>
+        <li><a href="#aboutus">
+                    <p>About Us</p>
+                </a></li>
+        <li><a href="#tandc">
+                    <p>Terms and Conditions</p>
+                </a></li>
+        <li><a href="#privacy">
+                    <p>Privacy Policy</p>
+                </a></li>
+        <li><a href="#help">
+                    <p>Help</p>
+                </a></li>
+    </ul>
+    <script src="script.js"></script>
+</footer>
+</html>
